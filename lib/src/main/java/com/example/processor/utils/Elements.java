@@ -1,4 +1,9 @@
-package com.example.processor;
+package com.example.processor.utils;
+
+import com.example.processor.element.Element;
+import com.example.processor.element.ExecutableElement;
+import com.example.processor.element.TypeElement;
+import com.example.processor.element.VariableElement;
 
 import java.util.List;
 import java.util.Map;
@@ -9,7 +14,7 @@ import javax.lang.model.element.Name;
 import javax.lang.model.element.PackageElement;
 
 /**
- * 用来对程序元素进行操作的实用工具方法
+ * 一个用来处理Element的工具
  */
 public interface Elements {
 
