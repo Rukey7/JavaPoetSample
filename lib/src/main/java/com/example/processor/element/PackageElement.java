@@ -8,7 +8,7 @@ import javax.lang.model.element.Name;
 public interface PackageElement {
 
     /**
-     * 返回此包的完全限定名称。该名称也是包的规范 名称
+     * 返回此包的完全限定名称。该名称也是包的规范名称
      */
     Name getQualifiedName();
 

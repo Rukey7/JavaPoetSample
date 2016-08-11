@@ -6,7 +6,7 @@ import javax.lang.model.element.Element;
 import javax.tools.Diagnostic;
 
 /**
- * 提供注解处理器用来报告错误消息、警告和其他通知的方式.
+ * 提供注解处理器用来报告错误消息、警告和其他通知.
  */
 public interface Messager {
     /**

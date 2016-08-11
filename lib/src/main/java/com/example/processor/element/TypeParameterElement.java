@@ -5,7 +5,7 @@ import java.util.List;
 import javax.lang.model.type.TypeMirror;
 
 /**
- * 表示一般类、接口、方法或构造方法元素的形式类型参数.
+ * 表示一般类、接口、方法或构造方法元素的泛型参数.
  */
 public interface TypeParameterElement {
 

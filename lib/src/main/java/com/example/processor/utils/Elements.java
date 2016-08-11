@@ -70,7 +70,6 @@ public interface Elements {
      */
     Name getBinaryName(TypeElement type);
 
-
     /**
      * 返回元素的包。包的包是它本身.
      *

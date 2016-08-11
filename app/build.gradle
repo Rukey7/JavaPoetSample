@@ -21,7 +21,7 @@ android {
     }
 
 //    packagingOptions {
-//        exclude 'META-INF/services/javax.annotation.processing.Processor' // butterknife
+//        exclude 'META-INF/services/javax.annotation.processing.Processor'
 //    }
 }
 
@@ -29,8 +29,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
-    //    compile project(':lib')
-//    apt project(':lib')
+    //    compile project(':processors')
     compile project(':annotations')
     apt project(':processors')
 }

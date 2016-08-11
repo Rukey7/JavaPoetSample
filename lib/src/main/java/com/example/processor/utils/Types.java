@@ -16,11 +16,6 @@ import javax.lang.model.type.WildcardType;
 
 /**
  * 一个用来处理TypeMirror的工具
- *
- * TypeMirror：表示 Java 编程语言中的类型。这些类型包括基本类型、声明类型（类和接口类型）、数组类型、类型变量和 null 类型。
- * 还可以表示通配符类型参数、executable 的签名和返回类型，以及对应于包和关键字 void 的伪类型;
- * 子类实现：ArrayType, DeclaredType, ErrorType, ExecutableType, NoType, NullType,
- * PrimitiveType, ReferenceType, TypeVariable, WildcardType
  */
 public interface Types {
     /**
@@ -74,9 +69,10 @@ public interface Types {
     List<? extends TypeMirror> directSupertypes(TypeMirror t);
 
     /**
-     * 返回删除状态的类型.
+     * 返回删除形式参数的类型.
+     * java.util.List<java.lang.String> -> java.util.List
      *
-     * @return 删除状态的给定类型
+     * @return 删除形式参数的给定类型
      * @throws IllegalArgumentException 如果给定一个 package 类型
      */
     TypeMirror erasure(TypeMirror t);
